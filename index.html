@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gotham's Hangman!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img id="title-image" src="assets/images/5b4bf1b1f59b000abdb0169a.png" alt="World's Greatest Hangman"/>
+        <div class="row">
+            <div class="col-md-9 offset-md-2 main">
+                <h2>Press Any Key to Get Started!</h2>
+                <br>
+                <h4>Wins</h4>
+                <h5 id="totalWins"></h5>
+                <h4>What's the Word?</h4>
+                <h3 id="currentWord"></h3>
+                <h4>Guesses Remaining</h4>
+                <h5 id="remainingGuesses"></h5>
+                <h4>Letters Guessed</h4>
+                <h3 id="guessedLetters"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+</body>
+
+</html>
