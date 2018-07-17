@@ -3,13 +3,13 @@ var wordBank = ["catwoman", "huntress", "clayface", "batgirl", "zatanna", "night
 
 const numofTries = 10;            
 
-var guessedLetters = [];        // Stores the letters the user guessed
-var currentGuess;           // Index of the current word in the array
-var guessingWord = [];          // This will be the word we actually build to match the current word
-var remainingGuesses = 0;       // How many tries the player has left
-var StartGame = false;        // Flag to tell if the game has started
-var EndGame = false;        // Flag for 'press any key to try again'     
-var wins = 0;                   // How many wins has the player racked up
+var guessedLetters = [];       
+var currentGuess;           
+var guessingWord = [];         
+var remainingGuesses = 0;       
+var StartGame = false;        // game start!
+var EndGame = false;        // game should restart after    
+var wins = 0;                
 
 //////////////////////////////////////////////////////////////////
 
@@ -72,7 +72,7 @@ document.onkeyup = function(event) {
 
 function makeGuess(letter) {
     if (remainingGuesses > 0) {
-        if (!StartGame) {
+        if (StartGame = false) {
             StartGame = true;
         }
 
